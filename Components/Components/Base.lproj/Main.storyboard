@@ -16,22 +16,50 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRe-v7-9kP">
-                                <rect key="frame" x="137" y="602" width="196" height="84"/>
+                                <rect key="frame" x="26" y="204" width="146" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ioSButton" backgroundImage="Screenshot 2020-02-07 at 9.32.39 AM.png">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="Start ">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="clickmefuction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ydF-Qg-N0v"/>
-                                    <action selector="printAllComponents:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qsg-nm-QdU"/>
+                                    <action selector="animateClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c3I-GR-wCd"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Vc-yI-ytj">
+                                <rect key="frame" x="26" y="44" width="146" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bc7-Yb-7hg">
+                                <rect key="frame" x="221" y="44" width="146" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ka5-gr-KYx">
+                                <rect key="frame" x="221" y="197" width="146" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start ">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="animate2CLick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3nz-yz-Nmd"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="QUM-NY-Hr6">
+                                <rect key="frame" x="18" y="675" width="378" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="varySpeed:" destination="BYZ-38-t0r" eventType="valueChanged" id="n6l-hR-0AE"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="btnDragged" destination="tRe-v7-9kP" id="qAN-1y-Zs0"/>
+                        <outlet property="animateIUmageView2" destination="Bc7-Yb-7hg" id="jlq-Va-ks6"/>
+                        <outlet property="animateImageView" destination="7Vc-yI-ytj" id="tA0-nz-NA6"/>
+                        <outlet property="speedSlider" destination="QUM-NY-Hr6" id="g2B-bP-9n8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -39,7 +67,4 @@
             <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Screenshot 2020-02-07 at 9.32.39 AM.png" width="40" height="42"/>
-    </resources>
 </document>

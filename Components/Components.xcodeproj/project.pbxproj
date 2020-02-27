@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A88CE13023F109BE00B09EC8 /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = A88CE12B23F109BD00B09EC8 /* img2.png */; };
+		A88CE13123F109BE00B09EC8 /* img4.png in Resources */ = {isa = PBXBuildFile; fileRef = A88CE12C23F109BD00B09EC8 /* img4.png */; };
+		A88CE13223F109BE00B09EC8 /* img3.png in Resources */ = {isa = PBXBuildFile; fileRef = A88CE12D23F109BE00B09EC8 /* img3.png */; };
+		A88CE13323F109BE00B09EC8 /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = A88CE12E23F109BE00B09EC8 /* img1.png */; };
+		A88CE13423F109BE00B09EC8 /* img5.png in Resources */ = {isa = PBXBuildFile; fileRef = A88CE12F23F109BE00B09EC8 /* img5.png */; };
 		A88D4B9023ED0F610051F930 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A88D4B8F23ED0F610051F930 /* AppDelegate.m */; };
 		A88D4B9323ED0F610051F930 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A88D4B9223ED0F610051F930 /* SceneDelegate.m */; };
 		A88D4B9623ED0F610051F930 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A88D4B9523ED0F610051F930 /* ViewController.m */; };
@@ -18,6 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A88CE12B23F109BD00B09EC8 /* img2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img2.png; sourceTree = "<group>"; };
+		A88CE12C23F109BD00B09EC8 /* img4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img4.png; sourceTree = "<group>"; };
+		A88CE12D23F109BE00B09EC8 /* img3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img3.png; sourceTree = "<group>"; };
+		A88CE12E23F109BE00B09EC8 /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
+		A88CE12F23F109BE00B09EC8 /* img5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img5.png; sourceTree = "<group>"; };
 		A88D4B8B23ED0F610051F930 /* Components.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Components.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A88D4B8E23ED0F610051F930 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A88D4B8F23ED0F610051F930 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -69,6 +79,11 @@
 				A88D4B9223ED0F610051F930 /* SceneDelegate.m */,
 				A88D4B9423ED0F610051F930 /* ViewController.h */,
 				A88D4B9523ED0F610051F930 /* ViewController.m */,
+				A88CE12E23F109BE00B09EC8 /* img1.png */,
+				A88CE12B23F109BD00B09EC8 /* img2.png */,
+				A88CE12D23F109BE00B09EC8 /* img3.png */,
+				A88CE12C23F109BD00B09EC8 /* img4.png */,
+				A88CE12F23F109BE00B09EC8 /* img5.png */,
 				A88D4B9723ED0F610051F930 /* Main.storyboard */,
 				A88D4BA723ED18ED0051F930 /* Screenshot 2020-02-07 at 9.32.39 AM.png */,
 				A88D4B9A23ED0F630051F930 /* Assets.xcassets */,
@@ -137,6 +152,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A88D4BA823ED18ED0051F930 /* Screenshot 2020-02-07 at 9.32.39 AM.png in Resources */,
+				A88CE13323F109BE00B09EC8 /* img1.png in Resources */,
+				A88CE13423F109BE00B09EC8 /* img5.png in Resources */,
+				A88CE13023F109BE00B09EC8 /* img2.png in Resources */,
+				A88CE13123F109BE00B09EC8 /* img4.png in Resources */,
+				A88CE13223F109BE00B09EC8 /* img3.png in Resources */,
 				A88D4B9E23ED0F630051F930 /* LaunchScreen.storyboard in Resources */,
 				A88D4B9B23ED0F630051F930 /* Assets.xcassets in Resources */,
 				A88D4B9923ED0F610051F930 /* Main.storyboard in Resources */,
