@@ -14,6 +14,8 @@
 		A845869524077FF100A15BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A845869424077FF100A15BBB /* Assets.xcassets */; };
 		A845869824077FF100A15BBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A845869624077FF100A15BBB /* LaunchScreen.storyboard */; };
 		A845869B24077FF100A15BBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A845869A24077FF100A15BBB /* main.m */; };
+		A8DA5DF32408C2D300549C86 /* TextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA5DF22408C2D300549C86 /* TextFieldViewController.m */; };
+		A8DA5DF62408CF9100549C86 /* ACFloatingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DA5DF52408CF9000549C86 /* ACFloatingTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		A845869724077FF100A15BBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A845869924077FF100A15BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A845869A24077FF100A15BBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A8DA5DF12408C2D300549C86 /* TextFieldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldViewController.h; sourceTree = "<group>"; };
+		A8DA5DF22408C2D300549C86 /* TextFieldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldViewController.m; sourceTree = "<group>"; };
+		A8DA5DF42408CF9000549C86 /* ACFloatingTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACFloatingTextField.h; sourceTree = "<group>"; };
+		A8DA5DF52408CF9000549C86 /* ACFloatingTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACFloatingTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,10 @@
 				A845868C24077FEF00A15BBB /* SceneDelegate.m */,
 				A845868E24077FEF00A15BBB /* ViewController.h */,
 				A845868F24077FEF00A15BBB /* ViewController.m */,
+				A8DA5DF12408C2D300549C86 /* TextFieldViewController.h */,
+				A8DA5DF22408C2D300549C86 /* TextFieldViewController.m */,
+				A8DA5DF42408CF9000549C86 /* ACFloatingTextField.h */,
+				A8DA5DF52408CF9000549C86 /* ACFloatingTextField.m */,
 				A845869124077FEF00A15BBB /* Main.storyboard */,
 				A845869424077FF100A15BBB /* Assets.xcassets */,
 				A845869624077FF100A15BBB /* LaunchScreen.storyboard */,
@@ -147,9 +157,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A845869024077FEF00A15BBB /* ViewController.m in Sources */,
+				A8DA5DF62408CF9100549C86 /* ACFloatingTextField.m in Sources */,
 				A845868A24077FEF00A15BBB /* AppDelegate.m in Sources */,
 				A845869B24077FF100A15BBB /* main.m in Sources */,
 				A845868D24077FEF00A15BBB /* SceneDelegate.m in Sources */,
+				A8DA5DF32408C2D300549C86 /* TextFieldViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
