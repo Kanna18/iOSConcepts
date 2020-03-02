@@ -13,6 +13,16 @@
 @property UITextField  *userNameTF;
 @property UITextField  *pwdTF;
 @property UITextView *addrTV;
+@property UISwitch *bgSwitch;
+@property UILabel *valueLbl;
+
+@property (weak, nonatomic) IBOutlet UISwitch *mySwitch;
+
+@property UISlider *valueSlider;
+
+@property UIStepper *valueSStepper;
+
+- (IBAction)chnageBG:(id)sender;
 
 @end
 
@@ -21,30 +31,70 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+//    
+//    self.userNameTF = [[UITextField alloc]initWithFrame:CGRectMake(50, 50, 300, 40)];
+//    self.userNameTF.backgroundColor = [UIColor grayColor];
+//    self.userNameTF.textColor = [UIColor blackColor];
+//    self.userNameTF.text = @"Enter UserName";
+//    self.userNameTF.textAlignment = NSTextAlignmentCenter;
+//    self.userNameTF.delegate = self;
+//    [self.view addSubview:self.userNameTF];
+//    
+//    
+//    self.pwdTF = [[UITextField alloc]initWithFrame:CGRectMake(50, 100, 300, 40)];
+//    self.pwdTF.backgroundColor = [UIColor grayColor];
+//    self.pwdTF.textColor = [UIColor blackColor];
+//    self.pwdTF.delegate = self;
+//    self.pwdTF.text = @"Enter Password";
+//    self.pwdTF.textAlignment = NSTextAlignmentCenter;
+//    self.pwdTF.keyboardType = UIKeyboardTypeNumberPad;
+//    [self.view addSubview:self.pwdTF];
+//    
+//    /*self.addrTV = [[UITextView alloc]initWithFrame:CGRectMake(50, 150, 300, 500)];
+//    self.addrTV.backgroundColor = [UIColor grayColor];
+//    self.addrTV.delegate = self;
+//    [self.view addSubview:self.addrTV];*/
     
-    self.userNameTF = [[UITextField alloc]initWithFrame:CGRectMake(50, 50, 300, 40)];
-    self.userNameTF.backgroundColor = [UIColor grayColor];
-    self.userNameTF.textColor = [UIColor blackColor];
-    self.userNameTF.text = @"Enter UserName";
-    self.userNameTF.textAlignment = NSTextAlignmentCenter;
-    self.userNameTF.delegate = self;
-    [self.view addSubview:self.userNameTF];
+    
+    self.bgSwitch = [[UISwitch alloc]initWithFrame:CGRectMake(50, 100, 1000, 10050)];
+    [self.bgSwitch addTarget:self action:@selector(changeBgColor) forControlEvents:UIControlEventValueChanged];
+    self.bgSwitch.onTintColor = [UIColor redColor];
+    self.bgSwitch.thumbTintColor = [UIColor blueColor];
+    [self.view addSubview:self.bgSwitch];
+    
+    self.valueLbl = [[UILabel alloc]initWithFrame:CGRectMake(150, 250, 40, 40)];
+    self.valueLbl.backgroundColor = [UIColor whiteColor];
+    self.valueLbl.text = @"0";
+    [self.view addSubview:self.valueLbl];
+    
+    self.valueSlider = [[UISlider alloc]initWithFrame:CGRectMake(30, 300, 300, 30)];
+    self.valueSlider.backgroundColor = [UIColor grayColor];
+    self.valueSlider.minimumValue = 0;
+    self.valueSlider.maximumValue = 100;
+    [self.valueSlider addTarget:self action:@selector(mySliderValueChanged) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:self.valueSlider];
     
     
-    self.pwdTF = [[UITextField alloc]initWithFrame:CGRectMake(50, 100, 300, 40)];
-    self.pwdTF.backgroundColor = [UIColor grayColor];
-    self.pwdTF.textColor = [UIColor blackColor];
-    self.pwdTF.delegate = self;
-    self.pwdTF.text = @"Enter Password";
-    self.pwdTF.textAlignment = NSTextAlignmentCenter;
-    self.pwdTF.keyboardType = UIKeyboardTypeNumberPad;
-    [self.view addSubview:self.pwdTF];
     
-    /*self.addrTV = [[UITextView alloc]initWithFrame:CGRectMake(50, 150, 300, 500)];
-    self.addrTV.backgroundColor = [UIColor grayColor];
-    self.addrTV.delegate = self;
-    [self.view addSubview:self.addrTV];*/
+    self.valueSStepper = [[UIStepper alloc]initWithFrame:CGRectMake(30, 350, 300, 30)];
+    self.valueSStepper.backgroundColor = [UIColor yellowColor];
+    self.valueSStepper.minimumValue = 0;
+    self.valueSStepper.maximumValue = 100;
+    [self.valueSStepper addTarget:self action:@selector(mySliderValueChanged) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:self.valueSStepper];
     
+    
+}
+-(void)mySliderValueChanged{
+    
+    self.valueLbl.text = [NSString stringWithFormat:@"%0.0f",self.valueSStepper.value];
+}
+-(void)changeBgColor{
+    if(self.bgSwitch.isOn){
+        self.view.backgroundColor = [UIColor cyanColor];
+    }else{
+        self.view.backgroundColor = [UIColor grayColor];
+    }
 }
 
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
@@ -92,4 +142,7 @@
 }
 */
 
+- (IBAction)chnageBG:(id)sender {
+    self.view.backgroundColor = [UIColor yellowColor];
+}
 @end

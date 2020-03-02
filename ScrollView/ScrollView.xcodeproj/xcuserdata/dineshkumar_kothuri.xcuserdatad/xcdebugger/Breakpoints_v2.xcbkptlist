@@ -14,9 +14,9 @@
             filePath = "ScrollView/TextFieldViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "-textFieldDidBeginEditing:"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "-textFieldShouldBeginEditing:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -30,8 +30,8 @@
             filePath = "ScrollView/TextFieldViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "-textField:shouldChangeCharactersInRange:replacementString:"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,9 +46,73 @@
             filePath = "ScrollView/TextFieldViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "-textFieldDidEndEditing:"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "-textFieldShouldEndEditing:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E70A5FF-2F77-46E5-BF96-E72FD3B3B2F1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScrollView/ViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "bgSwitch"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "3E70A5FF-2F77-46E5-BF96-E72FD3B3B2F1 - 2f9905bcd12234fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController bgSwitch]"
+                  moduleName = "ScrollView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dineshkumar_kothuri/Documents/iOS_Class/iOSConcepts/ScrollView/ScrollView/ViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "3E70A5FF-2F77-46E5-BF96-E72FD3B3B2F1 - 9ca24a60b0880167"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController setBgSwitch:]"
+                  moduleName = "ScrollView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dineshkumar_kothuri/Documents/iOS_Class/iOSConcepts/ScrollView/ScrollView/ViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "212AB35B-590B-4B20-8AE9-8E4F41EDD2A9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScrollView/TextFieldViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "-mySliderValueChanged"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
