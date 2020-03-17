@@ -33,6 +33,7 @@ static NSString *reuse = @"movieCell";
     self.moviesCV.delegate = self;
     self.moviesCV.dataSource = self;
     
+    
 
     
     

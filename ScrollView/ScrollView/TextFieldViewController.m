@@ -30,6 +30,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
     // Do any additional setup after loading the view.
 //    
 //    self.userNameTF = [[UITextField alloc]initWithFrame:CGRectMake(50, 50, 300, 40)];
